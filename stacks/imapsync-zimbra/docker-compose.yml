@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+    datanuvem_imapsync:
+        image: datanuvem/imapsync
+        container_name: ${DOMAIN}-${ACCOUNT}
+        hostname: ${DOMAIN}-${ACCOUNT}
+        environment:
+            SERVER1: ${SERVER1}
+            IMAP_USER1: ${ACCOUNT}@${DOMAIN}
+            IMAP_PWD1: ${PASSWORD}
+            SERVER2: ${SERVER2}
+            IMAP_USER2: ${ACCOUNT}@${DOMAIN}
+            IMAP_PWD2: ${PASSWORD}
