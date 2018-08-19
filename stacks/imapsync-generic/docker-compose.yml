@@ -10,5 +10,5 @@ services:
             IMAP_USER1: ${ACCOUNT}@${DOMAIN}
             IMAP_PWD1: ${PASSWORD}
             SERVER2: ${SERVER2}
-            IMAP_USER2: ${ACCOUNT}@${DOMAIN}
+            IMAP_USER2: ${GSUITE_ACCOUNT}@${GSUITE_DOMAIN}
             IMAP_PWD2: ${PASSWORD}
